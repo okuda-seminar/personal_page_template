@@ -7,10 +7,12 @@
 #icon = "home"
 #newtab = true
 
+# change the URLs of github and so on Githubなどの自分のアカウントURLに変更
+
 [[social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+url = "https://github.com/eightsuzuki"
 
 [social.params]
 icon = "brand-github"
@@ -18,7 +20,7 @@ icon = "brand-github"
 [[social]]
 identifier = "twitter"
 name = "Twitter"
-url = "https://twitter.com"
+url = "https://twitter.com/8Infu"
 
 [social.params]
 icon = "brand-twitter"

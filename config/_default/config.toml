@@ -1,9 +1,8 @@
 # Change baseurl before deploy
-baseurl = "https://demo.stack.jimmycai.com" # chnge the URL to your github repositry レポジトリーのURLに変更をしよう
+baseurl = "https://demo.stack.jimmycai.com"
 languageCode = "en-us"
 paginate = 5
-title = "Eight Suzuki"　# chnge the title webサイトのタイトルの変更をしよう
-
+title = "Hugo Theme Stack Starter"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
