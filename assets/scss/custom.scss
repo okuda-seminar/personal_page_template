@@ -1,3 +1,125 @@
 /*
     You can add your own custom styles here.
 */
+
+.section-title {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--body-text-color);
+
+    a {
+        color: var(--body-text-color);
+    }
+}
+
+.section-card {
+    border-radius: var(--card-border-radius);
+    background-color: transparent; 
+    padding: var(--small-card-padding);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding: 5px;
+    --separation: 0px;
+    
+
+    .section-term {
+        font-size: 2.2rem;
+        margin: 0;
+        color: var(--card-text-color-main);
+    }
+
+    .section-description {
+        font-weight: normal;
+        color: var(--card-text-color-secondary);
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .section-details {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .section-image {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .article-list--compact {
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        background-color: var(--card-background);
+        --image-size: 50px;
+    
+        @include respond(md) {
+            --image-size: 60px;
+        }
+    
+        article {
+            & > a {
+                display: flex;
+                align-items: center;
+                padding: var(--small-card-padding);
+                gap: 15px;
+            }
+    
+            &:not(:last-of-type) {
+                border-bottom: 1.5px solid var(--card-separator-color);
+            }
+    
+            .article-details {
+                flex-grow: 1;
+                padding: 0;
+                min-height: var(--image-size);
+                gap: 10px;
+            }
+    
+            .article-title {
+                margin: 0;
+                font-size: 1.6rem;
+    
+                @include respond(md) {
+                    font-size: 1.8rem;
+                }
+            }
+    
+            .article-image {
+                img {
+                    width: var(--image-size);
+                    height: var(--image-size);
+                    object-fit: cover;
+                }
+            }
+    
+            .article-time {
+                font-size: 1.4rem;
+            }
+    
+            .article-preview {
+                font-size: 1.4rem;
+                color: var(--card-text-color-tertiary);
+                margin-top: 10px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .section-count {
+        color: var(--card-text-color-tertiary);
+        font-size: 0rem;
+        margin: 0;
+        padding: 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
